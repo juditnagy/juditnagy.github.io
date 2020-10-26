@@ -1,0 +1,117 @@
+body{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 300px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.services{
+display: block;
+text-align: left;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-size: 24px;
+}
+
+.bg-light {
+    background-color: white!important;
+    height: 130px;
+   
+}
+
+.container{
+    background-color: white;
+    height: 650px;
+    max-width: 100%;
+
+}
+
+.navbar-toggler {
+    margin-right: 12%;
+}
+
+.navbar-brand {
+    margin-left: 8rem;
+}
+
+.mgr{
+    margin-right: 12%;
+}
+
+.img-container{
+    height: 800px;
+    background-color: white;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+   
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.services-description{
+    background-color:;
+    height: 535px;
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    padding-top: 3%;
+}
+
+.main-services{
+    background-color: white;
+    width: 50%;
+    height: 535px;
+}
+
+.items-services{
+    background-color:;
+    width: 50%;
+    height: 535px;
+}
+
+.card-body, .card{
+    text-align: left;
+    border: 0;
+    border-radius: 0;
+    padding-left: 2.5rem;
+}
+
+.card-header{
+    background-color: white;
+    border: 0;
+}
+
+.btn-link {
+    font-weight: 400;
+    color:black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
+.btn-link:hover {
+    color: #27A5E7;
+    text-decoration: none;
+}
+
+link:focus {
+    text-decoration: none;
+}
