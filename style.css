@@ -170,3 +170,47 @@ link:focus {
 .ptop{
     padding-top: 15%;
 }
+
+@media screen and (max-width: 1200px) {
+
+.main-services{
+        width: 100%;
+}
+
+.services-description{
+    flex-direction: column;
+}
+
+.items-services{
+    width: 100%;
+}
+
+.wrapper{
+    display: block;
+    width: 100%;
+}
+
+.template{
+    width: 100%;
+    margin: auto;
+}
+
+.btn-link{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+h2{
+    font-size: 20px !important;
+}
+
+.card{
+    padding: 0px;
+}
+
+.card-body{
+    padding: 0;
+}
