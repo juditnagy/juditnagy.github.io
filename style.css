@@ -11,6 +11,10 @@ h1{
     font-size: 60px;
 }
 
+h3{
+    padding: 2%;
+}
+
 .services{
 display: block;
 text-align: left;
@@ -27,9 +31,20 @@ font-size: 24px;
 
 .container{
     background-color: white;
-    height: 650px;
     max-width: 100%;
 
+}
+
+.medium-height{
+    height: 650px;
+}
+
+.l-height{
+    height: 850px;
+}
+
+.xl-height{
+    height: 1200px;
 }
 
 .navbar-toggler {
@@ -114,4 +129,44 @@ font-size: 24px;
 
 link:focus {
     text-decoration: none;
+}
+
+.template{
+    width: 50%;
+    height: 820px;
+
+}
+
+.center{
+    text-align: center;
+}
+
+.wrapper{
+    position: relative;
+    width: 65%;
+    margin: auto;
+    height: 2460px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.width50{
+    width: 50%;
+}
+
+.left{
+    padding-right: 5%;
+    padding-left: 0;
+}
+
+.p-left{
+    padding-left: 0%;
+}
+
+.right{
+    padding-top: 5%;
+}
+
+.ptop{
+    padding-top: 15%;
 }
