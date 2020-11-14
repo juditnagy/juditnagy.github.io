@@ -11,8 +11,22 @@ h1{
     font-size: 60px;
 }
 
+h2.dark{
+    margin-left: 17%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+div.card-body.dark{
+    color: #818195;
+}
+
 h3{
     padding: 2%;
+}
+
+.rice{
+text-align: left;
 }
 
 .services{
@@ -35,6 +49,11 @@ font-size: 24px;
 
 }
 
+.s-height{
+    height: 250px;
+    max-width: 70%;
+    margin: auto;
+}
 .medium-height{
     height: 650px;
 }
@@ -45,6 +64,13 @@ font-size: 24px;
 
 .xl-height{
     height: 1200px;
+}
+
+.faq{
+    height: 1500px;
+    background-color:#15141a;
+    padding: 0%;
+    width: 100%;
 }
 
 .navbar-toggler {
@@ -59,12 +85,17 @@ font-size: 24px;
     margin-right: 12%;
 }
 
+.main{
+background-color:;
+}
+
 .img-container{
     height: 800px;
     background-color: white;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+    width: 100%;
    
 }
 @keyframes gradient {
@@ -170,6 +201,18 @@ link:focus {
 .ptop{
     padding-top: 15%;
 }
+
+#accordionFaq{
+    max-width: 75%;
+    margin: auto;
+}
+
+.dark{
+    background-color:#15141a;
+    color: #fff;
+    text-align: left;
+}
+
 
 @media screen and (max-width: 1200px) {
 
