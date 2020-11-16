@@ -15,6 +15,10 @@ h2.dark{
     margin-left: 17%;
     padding-top: 5%;
     padding-bottom: 5%;
+    display: block;
+    max-width: 75%;
+    margin: auto;
+    padding-left: 5%;
 }
 
 div.card-body.dark{
@@ -84,6 +88,7 @@ font-size: 24px;
 .mgr{
     margin-right: 12%;
 }
+
 
 .main{
 background-color:;
@@ -208,10 +213,13 @@ link:focus {
 }
 
 .dark{
-    background-color:#15141a;
     color: #fff;
     text-align: left;
+    background-color:#15141a;
+   
+   
 }
+
 
 
 @media screen and (max-width: 1200px) {
