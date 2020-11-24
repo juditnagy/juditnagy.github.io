@@ -21,6 +21,15 @@ h2.dark{
     padding-left: 5%;
 }
 
+h2{
+font-size: 50px;
+font-weight: 600;
+text-align: left;
+letter-spacing: -3px;
+line-height: 45px;
+}
+
+
 div.card-body.dark{
     color: #818195;
 }
@@ -29,8 +38,22 @@ h3{
     padding: 2%;
 }
 
+p{
+    font-size: 22px;
+    text-align: left;
+    letter-spacing: -2px;
+}
+
+.fixed-price{
+text-align: justify;
+padding: 1% 15%;
+line-height: 2em;
+}
+
+
 .rice{
-text-align: left;
+text-align: center;
+padding-top: 12%;
 }
 
 .services{
@@ -38,7 +61,7 @@ display: block;
 text-align: left;
 font-family: 'Montserrat', sans-serif;
 font-weight: 600;
-font-size: 24px;
+letter-spacing: -2px;
 }
 
 .bg-light {
@@ -53,11 +76,20 @@ font-size: 24px;
 
 }
 
+.xs-height{
+    height: 200px!important;
+}
+
 .s-height{
     height: 250px;
     max-width: 70%;
     margin: auto;
 }
+
+.sm-height{
+    height: 450px !important;
+}
+
 .medium-height{
     height: 650px;
 }
@@ -89,9 +121,20 @@ font-size: 24px;
     margin-right: 12%;
 }
 
+.mgt{
+margin-top: 5%;
+}
+
+.mgt10{
+    margin-top: 10%;
+}
+
+.mgl{
+    margin-left: 5%;
+}
 
 .main{
-background-color:;
+
 }
 
 .img-container{
@@ -116,7 +159,7 @@ background-color:;
 }
 
 .services-description{
-    background-color:;
+   
     height: 535px;
     max-width: 70%;
     margin: auto;
@@ -131,7 +174,7 @@ background-color:;
 }
 
 .items-services{
-    background-color:;
+   
     width: 50%;
     height: 535px;
 }
@@ -149,11 +192,11 @@ background-color:;
 }
 
 .btn-link {
-    font-weight: 400;
+    font-weight: 600;
     color:black;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
+    font-size: 46px;
     line-height: 40px;
     letter-spacing: -1px;
 }
@@ -161,6 +204,20 @@ background-color:;
 .btn-link:hover {
     color: #27A5E7;
     text-decoration: none;
+}
+
+.btn-primary{
+    background-color: white;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.buttoner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
 }
 
 link:focus {
@@ -181,9 +238,10 @@ link:focus {
     position: relative;
     width: 65%;
     margin: auto;
-    height: 2460px;
+    height: 2660px;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 5%;
 }
 
 .width50{
@@ -220,7 +278,40 @@ link:focus {
    
 }
 
+.container-more{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    height: 4500px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.image-section, .text-section{
+    width: 50%;
+    height: 900px;
+    
+}
+
+.longer{
+    height: 1200px;
+}
+
+#flowchart{
+    max-width: 95%;
+}
+
+#webdesign{
+    max-width: 85%;
+    margin: auto;
+    margin-top: 50%;
+    
+}
+
+#tablet{
+    max-width: 85%;
+    margin-top: 20%;
+}
 
 @media screen and (max-width: 1200px) {
 
