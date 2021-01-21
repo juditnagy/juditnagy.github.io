@@ -22,7 +22,7 @@ h2.dark{
 }
 
 h2{
-font-size: 50px;
+font-size: 44px;
 font-weight: 600;
 text-align: left;
 letter-spacing: -3px;
@@ -36,6 +36,10 @@ div.card-body.dark{
 
 h3{
     padding: 2%;
+}
+
+h3.services{
+    padding: 0;
 }
 
 p{
@@ -133,9 +137,6 @@ margin-top: 5%;
     margin-left: 5%;
 }
 
-.main{
-
-}
 
 .img-container{
     height: 800px;
@@ -179,11 +180,15 @@ margin-top: 5%;
     height: 535px;
 }
 
+#weboldalkeszites{
+    padding-left: 0rem;
+}
+
 .card-body, .card{
     text-align: left;
     border: 0;
     border-radius: 0;
-    padding-left: 2.5rem;
+    padding-left: 0rem;
 }
 
 .card-header{
