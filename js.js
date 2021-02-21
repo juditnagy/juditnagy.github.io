@@ -129,7 +129,7 @@ for (var i = 0; i < nodeList.length; i++) {
             node.classList.add('in-view');
         },
         leave: function (node, distance) {
-            node.classList.remove('in-view');
+            node.classList.remove('');
         }
     });
 }

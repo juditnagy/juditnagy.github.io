@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>CarGarázs</title>
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/site.css">
+
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/menu.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/card.css">
+
+
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/transition.css">
+
+  <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+
+  <script src="assets/library/jquery.min.js"></script>
+  <script src="ui/dist/components/visibility.js"></script>
+  <script src="ui/dist/components/sidebar.js"></script>
+  <script src="ui/dist/components/transition.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+  </script>
+</head>
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a class="active item">Kezdőlap</a>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="active item">Kezdőlap</a>
+  <a class="item">Work</a>
+
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment" style="background: url(images/car-repair-big.jpg)">
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="active item">Kezdőlap</a>
+      </div>
+    </div>
+
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        CarGarázs 
+      </h1>
+      <h2>Profeszionális szervíz szolgáltatás</h2>
+    </div>
+
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">Egész évben vonzó, szezonális ajánlatok</h3>
+          <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+          <h3 class="ui header">100% elégedettségi garancia</h3>
+          <p>Minden általunk szerelt gépjárműre élethosszig tartó garanciát vállalunk.</p>
+        </div>
+        <div class="six wide right floated column">
+          <img src="images/mercedes.jpg" class="ui large bordered rounded image">
+        </div>
+      </div>
+      <div class="row">
+        <div class="center aligned column">
+          <a class="ui huge button">Szolgáltatásaink</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui vertical segment">
+	<div class="ui stackable two column padded grid">
+      <div class="center aligned row">
+        <div class="yellow column" style="background: url(images/motor.jpg); height: 500px; background-repeat: no-repeat;background-attachment: fixed;background-position: center; ">
+        </div>
+        <div class="red column">
+          <p>
+
+<h2 class="ui icon header">
+  <i class="settings icon"></i>
+  <div class="content">
+    15 éve a szakmában
+    <p>
+	<div class="ui header left aligned">
+	Cégünk 15 éve alakult, azóta is arra törekszünk, hogy elégedett ügyfeleink legyenek. Folyamatosan képezzük a szakembereinket, hogy a legújab trendeknek megfelelő gépjárműveket is szervízelni tudjunk. Ebből kifolyólag elektromos autóják is nyugodtan ránkbízhatja.
+	</div>
+	<p>
+  </div>
+</h2>
+
+
+          </p>
+        </div>
+		<div class="black column">
+		 <p>
+
+		 <h2 class="ui icon header">
+  <i class="history inverted icon"></i>
+  <div class="content" style="color: #c0c0c0;">
+Személygépkocsi szeríz
+<p>
+    <div class="ui header left aligned" style="color: #c0c0c0;">
+Szervízünk több nagy autómárka hivatalos szervízeként is működik, tehát hivatalos forrásokból tudjuk beszerezni az alkatrészeinket. Továbbá magasan képzett munkatársaink gondoskodnak gépjárműve optimális karbantartásáról, akár átépítésével is.
+	</div>
+	</p>
+  </div>
+</h2>
+
+
+		 </p>
+        </div>
+        <div class="yellow column" style="background: url(images/spanner.jpg); height: 500px;background-repeat: no-repeat; background-attachment: fixed;background-position: center; ">
+        </div>
+      </div>
+    </div>
+	   
+  </div>
+
+  <div class="ui vertical centered stripe segment">
+    <div class="ui text centered container">
+	<center>
+      <h3 class="ui header" style="font-size: 60px;">Miért válasszon minket?</h3>
+	  </center>
+		<div class="ui stackable two column padded grid">
+		
+		
+		<div class="column right floated right aligned"><font style="font-size: 35px;">Gyorsaság</font>
+<i class="huge icons">
+  <i class="big circle red outline icon"></i>
+  <i class="reply all red icon"></i>
+</i></div>
+		<div class="column">
+<i class="huge icons">
+  <i class="big red circle outline icon"></i>
+  <i class="clipboard red check icon"></i>
+</i>
+		<font style="font-size: 35px;">Garancia</font></div>
+		
+		<div class="column right floated right aligned"><font style="font-size: 35px;">Minőség</font> <i class="huge icons">
+  <i class="big circle red outline icon"></i>
+  <i class="dolly flatbet red icon"></i>
+</i></div>
+		<div class="column"><i class="huge icons">
+  <i class="big circle outline red icon"></i>
+  <i class="puzzle piece red icon"></i>
+</i> <font style="font-size: 35px;">Kiegészítők</font></div>
+		</div>
+
+
+      <h4 class="ui horizontal header divider">
+        <a href="#">Hasznos lehet</a>
+      </h4>
+      <h3 class="ui header">Állapotfelmérés és eredetiségvizsgálat</h3>
+      <p>Használtautó vásárlása esetén fontos az állpot és az erdetiségvizsgálat, mellyel elkerülhetőek a kellemetlenségek is. Éppen ezért cégünk minden szükséges vizsgálatot elvégez Önnek.</p>
+      <a class="ui large button">Időpontfoglalás</a>
+    </div>
+  </div>
+  
+  
+   <div class="ui inverted vertical masthead center aligned segment" style="background: url(images/jaguar.jpg)">
+    <div class="ui text container">
+      <h1 style="color: black; background-color: white;">
+      Szolgáltatásaink
+      </h1>
+    </div>
+	
+		<div class="ui centered padded grid">
+		<div class="eight wide center aligment column">
+		<div class="ui stackable two column padded grid">
+		<div class="column">
+		<div class="ui fluid card">
+  <a class="image" href="#">
+    <img src="images/break.jpg">
+  </a>
+  <div class="content">
+    <a class="header" href="#">Fékszervíz</a>
+    <div class="meta">
+      <a></a>
+    </div>
+  </div>
+</div>
+		</div>
+		<div class="column">
+		<div class="ui fluid card">
+  <a class="image" href="#">
+    <img src="images/engine.jpg">
+  </a>
+  <div class="content">
+    <a class="header" href="#">Motor javítás</a>
+    <div class="meta">
+      <a></a>
+    </div>
+  </div>
+</div>
+		</div>
+		<div class="column">
+		<div class="ui fluid card">
+  <a class="image" href="#">
+    <img src="images/motor2.jpg">
+  </a>
+  <div class="content">
+    <a class="header" href="#">Olajcsere</a>
+    <div class="meta">
+      <a></a>
+    </div>
+  </div>
+</div>
+		</div>
+		<div class="column">
+		<div class="ui fluid card">
+  <a class="image" href="#">
+    <img src="images/tire.jpg">
+  </a>
+  <div class="content">
+    <a class="header" href="#">Kerékcsere</a>
+    <div class="meta">
+      <a></a>
+    </div>
+  </div>
+</div>
+		</div>
+		</div>
+		</div>
+		
+		</div>
+		
+		      <a class="ui large button">További szolgáltatások</a>
+	
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+	     <div class="six wide right floated column">
+          <img src="images/tesla.jpg" class="ui large bordered rounded image">
+        </div>
+        <div class="eight wide column">
+          <h3 class="ui header">Elektormos autó szervíz</h3>
+          <p>Cégünk elektoromos autókkal is foglalkozik, többek között Tesla, Mercedes, Wolksvagen, Toyota márkájú autókat szerelünk, akkumlátort cserélünk.</p>
+          <h3 class="ui header">Karbantartás és Diagnosztika</h3>
+          <p>Karbantartás mellett diagonsztikát is végzünk, így az esetleges jövőbeni hibákat is ki tudjuk szűrni.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+   <div class="ui inverted vertical masthead center aligned segment padded" style="background: url(images/vw-beetle.jpg);">
+      <div class="ui text container">
+	  <h1 style="color: black; background-color: white;">
+      Kapcsolat
+      </h1>
+	  </div>
+	  <div class="ui text container" style="padding: 150px;">
+	   <h2 class="ui header">Címünk: Budapest, Garai u. 28.</h2>
+
+	  <div class="ui grid stacked one column center aligned padded">
+<div class="row">
+<i class="huge icons">
+  <i class="big red circle outline icon"></i>
+  <i class="clipboard red phone icon"></i>
+</i>
+		<font style="font-size: 35px; color: black;">+36/301234567 <br> +36/301234567</font>
+		</div>
+		<div class="row">
+		<i class="huge red facebook icon"></i> <i class="huge red twitter icon"></i> <i class="huge red envelope icon"></i>
+
+		</div>
+		</div>
+    </div>
+	
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">Elérhetőségek</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Tel.:+36/301234567</a>
+            <a href="#" class="item">E-mail: info@cargarazs.hu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

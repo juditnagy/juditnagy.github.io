@@ -8,9 +8,20 @@ body{
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;;
 }
+
+.contact{
+   text-align: left;
+}
+
+.contacter{
+    max-width: 80%!important;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 h1{
     font-family: 'Montserrat', sans-serif;
-    padding-top: 300px;
+    padding-top: 600px;
     text-align: center;
     font-size: 60px;
 }
@@ -46,20 +57,63 @@ h3.services{
     padding: 0;
 }
 
+.prodh3{
+    text-align: left;
+    margin-left: 1.5%;
+}
+
+.lefth{
+text-align: left;
+margin-left: 5%;
+}
+
 p{
-    font-size: 22px;
+    font-size: 1.5em;
     text-align: left;
     letter-spacing: -1px;
+    padding-left: 13px;
+    margin-left: 2.5%;
+    text-align: justify;
 }
 
 .p-4{
     padding: 0.5rem!important;
 }
 
+#tarhely{
+    margin-top: 10%;
+}
+
+li{
+    font-size: 1.2em;
+}
+
 .fixed-price{
 text-align: justify;
 padding: 1% 15%;
-line-height: 2em;
+line-height: 1.5em;
+}
+
+#fixbtn{
+    display: block;
+    max-width: 35%;
+    margin-top: 30px!important;
+    margin: auto;
+   
+}
+
+.photo{
+    margin-top: 3%!important;
+    margin-bottom: 10%;
+}
+
+
+#storage{
+    height: 700px;
+}
+
+#shorter{
+    height: 700px;
 }
 
 a:hover{
@@ -98,6 +152,11 @@ letter-spacing: -1px;
     background-color: white;
     max-width: 100%;
 
+}
+
+.fixprice{
+    max-width: 70%;
+    margin: auto;
 }
 
 .xs-height{
@@ -147,6 +206,10 @@ letter-spacing: -1px;
 
 .mgt{
 margin-top: 5%;
+}
+
+.mgtless{
+    margin-top: 1%!important;
 }
 
 .mgt10{
@@ -256,13 +319,18 @@ margin-top: 5%;
     margin-top: 15%;
 }
 
+.intext{
+margin-top: 5%;
+
+}
+
 link:focus {
     text-decoration: none;
 }
 
 .template{
     width: 50%;
-    height: 820px;
+    max-height: 1000px;
 
 }
 
@@ -275,7 +343,7 @@ link:focus {
     position: relative;
     width: 65%;
     margin: auto;
-    height: 2660px;
+    height: 3700px;
     display: flex;
     flex-wrap: wrap;
     padding-top: 5%;
@@ -299,7 +367,7 @@ link:focus {
 }
 
 .ptop{
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 #accordionFaq{
@@ -318,24 +386,42 @@ link:focus {
     max-width: 80%;
     margin: auto;
     margin-top: 50px;
-    height: 4500px;
+    height: 4900px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .image-section, .text-section{
     width: 50%;
-    height: 900px;
+    height: auto;
     
 }
 
 .longer{
-    height: 1200px;
+    height: auto;
 }
 
 #flowchart{
     max-width: 95%;
 }
+
+.package{
+    max-width: 50%!important;
+    margin: auto!important;
+}
+
+hr{
+    background-color: white;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 1px;
+}
+
+#price{
+    font-size: 2em;
+}
+
 
 #webdesign{
     max-width: 85%;
@@ -349,7 +435,39 @@ link:focus {
     margin-top: 20%;
 }
 
+/*typewriter*/
+  .line-1{
+      margin: 0 auto;
+      border-right: 2px solid rgba(255,255,255,.75);
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);    
+  }
+  
+  /* Animation */
+  .anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+  /*typewriter end*/
+#collapseOne::after{
+    content: ;
+}
+
 @media screen and (max-width: 1200px) {
+
+body{
+    font-size: 1.2rem;
+}
 
 .main-services{
         width: 100%;
@@ -363,26 +481,25 @@ link:focus {
     width: 100%;
 }
 
-.wrapper{
-    display: block;
-    width: 100%;
-}
+
 
 .template{
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    margin: 5%;
 }
 
 .btn-link{
     font-size: 20px;
 }
 
-h3{
-    font-size: 1rem;
+.center{
+    max-width: 80%;
+    margin: auto;
 }
 
 h2{
     font-size: 20px !important;
+    letter-spacing: 0px;
 }
 
 .card{
@@ -391,4 +508,41 @@ h2{
 
 .card-body{
     padding: 0;
+}
+
+.fixed-price {
+    padding: 1% 5%;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.left{
+    padding-right: 0;
+}
+
+.longer{
+    width: 90%;
+}
+
+.template{
+    height: auto;
+}
+
+.image-section{
+    width: 90%;
+    height: 400px;
+}
+
+.text-section{
+    width: 90%;
+}
+
+.faq{
+    margin-top: 1500px;
+}
+
+.main{
+    margin-top: 350px;
 }

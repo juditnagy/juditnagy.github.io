@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Fogászati Klinika - a szép mosolyért!</title>
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/site.css">
+
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/menu.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/card.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/embed.css">
+
+
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="ui/dist/components/transition.css">
+  <link rel="stylesheet" type="text/css" href="ui/materialize.min.css">
+
+  <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+
+.slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: #ffffff;
+}
+.slider {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+}
+.slider .indicators {
+  bottom: 60px;
+  z-index: 100;
+  /* text-align: left; */
+}
+
+
+
+  </style>
+
+  <script src="ui/library/jquery.min.js"></script>
+  <script src="ui/dist/components/visibility.js"></script>
+  <script src="ui/dist/components/sidebar.js"></script>
+  <script src="ui/dist/components/transition.js"></script>
+  <script src="ui/dist/components/embed.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+  <script>
+  $(document)
+    .ready(function() {
+		
+  $('.slider').slider();
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+		$('.ui.embed').embed();
+
+    })
+  ;
+  </script>
+</head>
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a class="active item" href="#kezdolap">Kezdőlap</a>
+    <a class="item" href="#szolgaltatasaink">Szolgáltatásaink</a>
+    <a class="item" href="#rolunk">Rólunk</a>
+    <a class="item" href="#kapcsolat">Kapcsolat</a>
+    <a class="item" href="#idopontfoglalas">Időpontfoglalás</a>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="active item" href="#kezdolap">Kezdőlap</a>
+  <a class="item" href="#szolgaltatasaink">Szolgáltatásaink</a>
+  <a class="item" href="#rolunk">Rólunk</a>
+  <a class="item" href="#kapcsolat">Kapcsolat</a>
+  <a class="item" href="#idopontfoglalas">Időpontfoglalás</a>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+<a name="kezdolap"></a>
+
+  <div class="ui vertical masthead center aligned segment">
+    <div class="ui container">
+      <div class="ui large secondary menu">
+        <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="active item" href="#kezdolap">Kezdőlap</a>
+        <a class="item" href="#szolgaltatasaink">Szolgáltatásaink</a>
+        <a class="item" href="#rolunk">Rólunk</a>
+        <a class="item" href="#kapcsolat">Kapcsolat</a>
+		<a class="item" href="#idopontfoglalas">Időpontfoglalás</a>
+      </div>
+    </div>
+
+
+ <div class="slider">
+    <ul class="slides" style="height: 600px;">
+      <li>
+        <img src="images/chair.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3><span style="background: black; padding: 5px;">Fogászati Klinika</span></h3>
+          <h5 class="light grey-text text-lighten-3"><span style="background: black; padding: 5px;">A szép mosolyért</span></h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/chair2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3><span style="background: black; padding: 5px;">Kedvező árak</span></h3>
+          <h5 class="light grey-text text-lighten-3"><span style="background: black; padding: 5px;">Nálunk olcsóbbat nem talál!</span></h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/chair2.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3><span style="background: black; padding: 5px;">Elégedettségi garancia</span></h3>
+          <h5 class="light grey-text text-lighten-3"><span style="background: black; padding: 5px;">100% elégedettségi garanciát vállalunk!</span></h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+     	<a name="rolunk"></a>
+  </div>
+
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">Esztétikai fogászat és fogászat</h3>
+          <p>Dr. Kovács István fogászati szakrendelője üdvözli kedves érdeklődőket. Örömmel látjük, hogy törődik fogaival.</p>
+          <h3 class="ui header">100% elégedettségi garancia</h3>
+          <p>Minden általunk szerelt gépjárműre élethosszig tartó garanciát vállalunk.</p>
+        </div>
+        <div class="six wide right floated column">
+<div class="ui embed" data-source="youtube" data-id="4SKiWwepNDo" data-placeholder="images/video-ex.jpg">
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui vertical centered stripe segment">
+  <div class="ui centered grid">
+    <div class="ui ten wide column">
+	<center>
+      <h3 class="ui header" style="font-size: 60px;">Miért válasszon minket?</h3>
+	  </center>
+		<div class="ui stackable three column padded grid" style="padding-top: 40px;">
+		<div class="column">
+		<h3 class="ui header"><i class="ui blue desktop icon"></i>Időpontok</h3>
+		<p>
+		Az első lépés a szépséghez, egy szép mosoly. Önnek nincs más dolga, mint időpontot foglalni klinikánkban! Garantáltan egy héten belüli időpont adás. 
+		</p>
+		</div>
+		<div class="column">
+		 <h3 class="ui header"><i class="ui blue money bill alternate outline icon"></i>Kedvező árak</h3>
+		<p>
+		Kiváló ápolás és kiváló minőségű kiegészítőkkel várunk mindenkit, és mindenzt kedvező áron tudjuk nyújtani. 
+		</p>
+		</div>
+		<div class="column">
+		 <h3 class="ui header"><i class="ui blue search icon"></i>Szakértelem</h3>
+		<p>
+		Több, mint 10 orvosból álló csapatunk magasan képzett, és mindenkinek a maximálisat nyújtja.
+		</p>
+		</div>
+		</div>
+    </div>
+	</div>
+	  <a name="szolgaltatasaink"></a>
+  </div>
+  
+   <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui text container">
+      <h1 style="color: black; background-color: white;">
+      Szolgáltatásaink
+      </h1>
+    </div>
+	  <div class="ui centered grid">
+    <div class="ui fourteen wide column">
+
+
+		<div class="ui stackable four column padded grid" style="padding-top: 40px;">
+		<div class="column">
+		<p>
+		<img class="ui fluid image" src="images/chair2.jpg">
+		</p>
+		<h2 class="ui blue header">Általános és megelőző ellátás</h2>
+		</div>
+		<div class="column">
+		<p>
+		<img class="ui fluid image" src="images/tooth.jpg">
+		</p>
+		<h2 class="ui blue header">Kozmetikai kezelés</h2>
+		</div>
+		<div class="column">
+		<p>
+		<img class="ui fluid image" src="images/dentist-care.jpg">
+		</p>
+		<h2 class="ui blue header">Fogászati kezelés</h2>
+		</div>
+		<div class="column">
+		<p>
+		<img class="ui fluid image" src="images/whitening.jpg">
+		</p>
+		<h2 class="ui blue header">Fogfehérítés</h2>
+		</div>
+		<div class="column">
+		<p>
+		<img class="ui fluid image" src="images/dental-braces.jpg">
+		</p>
+		<h2 class="ui blue header">Fogszabályozás</h2>
+		</div>
+		<div class="column">
+		<p>
+		<img class="ui fluid image" src="images/dentist-tools.jpg">
+		</p>
+		<h2 class="ui blue header">Fogsor és fogpótlás</h2>
+		</div>
+		<div class="column">
+		<p>
+		<img class="ui fluid image" src="images/pretty-girl.jpg">
+		</p>
+		<h2 class="ui blue header">Helyreállító fogászat</h2>
+		</div>
+		<div class="column">
+		<p>
+		<img class="ui fluid image" src="images/diagnostic.jpg">
+		</p>
+		<h2 class="ui blue header">Diagnosztika</h2>
+		</div>
+		</div>
+    </div>
+	</div>
+
+	 <a class="ui large button">További szolgáltatások</a>
+	
+  </div>
+
+   <div class="ui inverted vertical masthead center aligned segment padded" style="background: url(images/doctor.jpg);">
+   <a name="idopontfoglalas"></a>
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+    <div class="ui text container">
+      <h1 class="ui blue inverted header">Segíthetünk?</h1>
+	  <p style="padding-top: 40px; color: black;">
+	  <h3 class="ui black header">Az eljárások széles skáláját kínáljuk a tökéletes mosoly elnyerése érdekében!</h3>
+	  <button class="ui big blue inverted button">Időpontfoglalás</button>
+	  </p>
+    </div>
+	   
+      </div>
+    </div>
+	<a name="kapcsolat"></a>
+  </div>
+
+
+
+   <div class="ui vertical masthead center aligned segment padded">
+      <div class="ui text container">
+	  <h1 style="color: black; background-color: white;">
+      Kapcsolat
+      </h1>
+	  </div>
+	  <div class="ui text container" style="padding: 150px;">
+	   <h2 class="ui header">Címünk: Budapest, Garai u. 28.</h2>
+
+	  <div class="ui grid stacked one column center aligned padded">
+<div class="row">
+<i class="huge icons">
+  <i class="big blue circle outline icon"></i>
+  <i class="clipboard blue phone icon"></i>
+</i>
+		<font style="font-size: 35px; color: black;">+36/301234567 <br> +36/301234567</font>
+		</div>
+		<div class="row">
+		<i class="huge blue facebook icon"></i> <i class="huge blue twitter icon"></i> <i class="huge blue envelope icon"></i>
+
+		</div>
+		</div>
+    </div>
+	
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header"></h4>
+          <div class="ui inverted link list">
+		<a class="item" href="#szolgaltatasaink">Szolgáltatásaink</a>
+        <a class="item" href="#rolunk">Rólunk</a>
+        <a class="item" href="#kapcsolat">Kapcsolat</a>
+		<a class="item" href="#idopontfoglalas">Időpontfoglalás</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Címünk: Budapest, Garai u. 28.</h4>
+          <p>tel.: +36/301234567</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

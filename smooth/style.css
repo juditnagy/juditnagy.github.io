@@ -1,0 +1,158 @@
+.navbar{
+    background-color:#f6f1ee!important;
+    
+}
+
+.nav-link{
+    color: #abb280!important;
+}
+
+.purple{
+background-color:#cad0ef;
+border: none;
+color: white;
+}
+
+.beige{
+    background-color:#f6f1ee;
+    border: none;
+}
+
+.main{
+    margin-top: 15px!important;
+   
+    height: 500px;
+    padding: 0;
+}
+
+.bigger{
+    margin-top: 15px!important;
+   
+    height: 550px;
+    padding: 0;
+}
+
+#contactdiv{
+    background-image: url(background.JPG);
+    object-fit: fill;
+}
+
+.contact{
+    max-width: 50%;
+    margin: auto;
+    background-color: #abb280;
+    height: 100%;
+    opacity: 80%;
+}
+
+.white{
+    color: white;
+}
+
+.small{
+    max-width: 20%;
+    margin: auto;
+    height: 80%;
+}
+
+.big{
+    max-width: 90%;
+    margin: auto;
+    background-color:#f6f1ee;
+    border: none;
+    color: #abb280;
+}
+
+.center{
+    max-width: 70%!important;
+    margin: auto!important;
+    text-align: center!important;
+}
+
+.h2center{
+text-align: center!important;
+padding-top: 20px;
+}
+
+.bigpadding{
+    padding-top: 8%;
+}
+
+.bottom{
+    margin-top: 105px;
+}
+
+.card-group{
+    padding-top: 3%;
+}
+
+h5{
+    text-align: center;
+}
+
+.h5center{
+    text-align: center!important;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.green{
+    color:#abb280;
+}
+
+.padding{
+    padding-top: 3%;
+}
+
+.medium{
+    max-width: 24%;
+    margin: auto;
+}
+
+.back{
+    height: 75%;
+    max-width: 80%!important;
+}
+
+#backdiv{
+    background-image: url(background.JPG);
+    object-fit: fill;
+    padding-top: 7%;
+    height: 600px;
+    margin-top: 0px!important;
+}
+
+.cursive{
+    font-family: 'Yesteryear', cursive;
+}
+
+h1{
+    font-size: 6em;
+    line-height: 0.8em;
+    padding-top: 7%!important;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.capit{
+    text-transform: uppercase;
+}
+
+h5{
+    font-size: 2em;
+}

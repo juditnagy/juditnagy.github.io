@@ -3,16 +3,16 @@
 
 <head>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<link rel="stylesheet" href="style.css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
- 
+
   <title>Web Interactive</title>
 </head>
 
@@ -25,8 +25,8 @@
         <img src="logo.png" width="180" height="100" class="d-inline-block align-top" alt="" loading="lazy">
 
       </a>
-      <button onclick="menuDisappear()" id="togglemenu" class="navbar-toggler" type="button" data-toggle="" data-target=""
-        aria-controls="navbarToggleExternalContent" aria-expanded="" aria-label="Toggle navigation">
+      <button onclick="menuDisappear()" id="togglemenu" class="navbar-toggler" type="button" data-toggle=""
+        data-target="" aria-controls="navbarToggleExternalContent" aria-expanded="" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </nav>
@@ -36,10 +36,10 @@
         <a href="#fix">
           <h5 class="text-black h4 mgr" id="menu1" onclick="menuDisappear()">Fix áras csomagjaink</h5>
         </a>
-        <a href="#yourown">
+        <a href="#egyedi">
           <h5 class="text-black h4 mgr" onclick="menuDisappear()">Honlap egyedi igények alapján</h5>
         </a>
-        <a href="#storage">
+        <a href="#tarhely">
           <h5 class="text-black h4 mgr" onclick="menuDisappear()">Tárhelyszolgáltatás</h5>
         </a>
         <a href="#photography">
@@ -55,7 +55,8 @@
   </div>
 
   <div class="container medium-height">
-    <h1>Hello.</h1>
+    <h1 class="line-1 anim-typewriter">Hello.</h1>
+
   </div>
 
   <div class="img-container item"></div>
@@ -66,7 +67,7 @@
     <section class="services-description item">
       <section class="main-services">
         <h2 class="services">Szolgáltatásaink</h2>
-        <h3 class="services">Segítünk, hogy fasza weboldalad legyen.</h3>
+        <h3 class="services">Segítünk, hogy sikeres weboldalad legyen.</h3>
       </section>
       <section class="items-services">
         <div class="accordion" id="accordionExample">
@@ -76,84 +77,85 @@
                 <button id="weboldalkeszites" class="btn btn-link btn-block text-left" type="button"
                   data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Weboldalkészítés
-                </button>
               </h2>
             </div>
             <!--első-->
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-            <!--második-->
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Tárhely szolgáltatás
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <!--harmadik-->
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Fotózás
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-            <!--negyedik-->
-            <div class="card">
-              <div class="card-header" id="headingFour">
-                <h2 class="mb-0" id="fix">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Grafikai szolgáltatások
-                  </button>
-                </h2>
-              </div>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-              <div class="card">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
+                Igényeidnek megfelelően választhatsz szolgáltatásaink közül attól függően, hogy már
+                meglévő sablonból
+                készítsük el a honlapodat, vagy egyedi fejlesztésűre lenne szükséged. Ha gyorsan szeretnél eredményt
+                és kevésbé összetett szerkezetű honlapra van szükséged, választhatsz fix áras honlapcsomagjaink közül,
+                amelyek egy héten belül elkészülnek és már az elején, árajánlatkérés nélkül pontosan látod, hogy
+                milyen költségekkel járnak és bővíthetőek akár a későbbiek során is. Nálunk nincsenek meglepetések,
+                utólag korrigált árak, plusz díjak, már most, pontosan látod a honlapkészítés árainkat.</div>
+              <div class="card-body">Ha összetett szerkezetű honlapra van szükséged, vagy egyedi megoldásokat, modulokat
+                szeretnél,
+                esetleg webshopra is van szükséged, akkor pedig kérj ajánlatot egyedi honlapfejlesztésre, 1 napon
+                belül válaszolunk.</div>
+              <div class="buttoner mgtless"><button type="button" class="btn btn-primary mgtless">Primary</button></div>
             </div>
           </div>
+          <!--második-->
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Tárhely szolgáltatás
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                Annak érdekében, hogy minden egy kézben és gördülékenyen haladhasson, tárhelyszolgáltatást is tudunk
+                biztosítani igény esetén, illetve a domain név meghatározásában és lefoglalásában is tudunk segítséget
+                nyújtani. Természetesen, ha már van domain neved vagy tárhelyed, esetleg más szolgáltatótól szeretnéd
+                ezeket megrendelni, arra is van lehetőséged, ez csak a te választásodtól függ.
+              </div>
+              <div class="buttoner mgtless"><button type="button" class="btn btn-primary mgtless">Primary</button></div>
+            </div>
+          </div>
+          <!--harmadik-->
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Fotózás
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                Ha szeretnél a honlapodra saját, professzionális fényképeket akár a csapattagokról, akár a
+                telephelyedről, vagy a termékeidről webshopba vagy kreatív anyagokhoz, kiadványokhoz, fordulj hozzánk
+                bizalommal. Vállalunk üzleti portré fotózást, termékfotózást és illusztrációk készítését is a honlapod
+                egyedi megjelenésének biztosításához.
+              </div>
+              <div class="buttoner mgtless"><button type="button" class="btn btn-primary mgtless">Primary</button></div>
+            </div>
+          </div>
+          <!--negyedik-->
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0" id="fix">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Grafikai szolgáltatások
+                </button>
+              </h2>
+            </div>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card">
+              Vállalunk logotervezést, illetve egyéb kreatív anyagok elkészítését, legyen jó névjegykártya
+              tervezésről, vagy facebook reklámok elkészítéséről. Egyedi honlapfejlesztésnél 3 grafikai tervet
+              biztosítunk a megfelelő design kiválasztásához.
+            </div>
+            <div class="buttoner mgtless"><button type="button" class="btn btn-primary mgtless">Primary</button></div>
+          </div>
+        </div>
 
       </section>
     </section>
@@ -162,41 +164,60 @@
 
   <section class="main">
     <h3 class="center">Fix áras honlapcsomagjaink</h3>
+
+
+    <p class="fixed-price">Mi pontosan tudunk válaszolni arra a kérdésre, hogy mennyibe kerül egy honlap és mennyi ideig
+      tart az elkészítése. Létrehoztuk a saját fejlesztésű honlapsablonjainkat, amelyből választva 1 hét alatt elkészül
+      a honlapod fix, előre meghatározott díjért. Nincs zsákbamacska, nincsenek meglepetések, a honlapok élő előnézetét
+      pedig meg is tekintheted itt az oldalunkon. </p>
+
+    <div class="card mb-3 fixprice">
+      <div class="row no-gutters">
+
+        <div class="col-md-8">
+          <div class="card-body">
+            <p class="card-text">Természetesen a színek, képek és szöveges tartalom testreszabható és az egyes szakaszok
+              sorrendje is módosítható.
+            </p>
+            <p class="card-text">A sablonok egyoldalasak, ami azonban nem azt jelenti, hogy nincsenek rajta menüpontok,
+              csak azt, hogy
+              külön oldalbetöltés nélkül, lefelé görgetve érünk el minden tartalmat. A mai trendeknek megfelelő ez az
+              elrendezés, hiszen a legtöbben már okostelefonról böngészik a honlapokat, „pörgetik” a tartalmat lefelé. A
+              mi honlapunk is egyoldalas, hiszen így egyszerű, átlátható és gyors.</p>
+            <p class="card-text">Ha szeretnéd megnézni, hogy milyen honlapod lehet fix árért, egy héten belül válassz a
+              következő hat lehetőség közül és a képekre kattintva az előnézet is megnyílik:</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="/images/WebInteractive.jpg" class="card-img" alt="...">
+        </div>
+
+      </div>
     </div>
-    <p class="fixed-price">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eveniet voluptates.
-      Reiciendis obcaecati ducimus eligendi possimus. Beatae animi labore voluptas id recusandae amet consequatur
-      voluptates nesciunt? Rerum saepe error ipsum ipsa obcaecati laudantium laborum, officia nesciunt neque totam quae
-      qui nisi alias minus! Magni ab reprehenderit eveniet ratione architecto! Facilis!</p>
-    <p class="fixed-price">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, doloremque! Id, quasi
-      placeat? Adipisci reprehenderit aspernatur reiciendis? Quasi inventore assumenda sed, blanditiis quos eligendi
-      repellendus? Soluta illo harum enim suscipit, tenetur voluptatibus corporis perferendis cupiditate molestias
-      ducimus non sint nostrum pariatur corrupti iusto adipisci cumque eos, rem dolores error maxime sed! Numquam
-      veritatis qui voluptas sapiente aut expedita tempora quos repellat rerum distinctio voluptatum eaque soluta
-      commodi recusandae dolorum sequi similique quibusdam vitae, illum quaerat. Cupiditate vitae quae minus,
-      perspiciatis veritatis quia maiores eaque aliquam pariatur? Obcaecati placeat quaerat quia non exercitationem illo
-      perferendis soluta dolore, accusantium iste odit dolor.</p>
+
     <div class="wrapper item">
       <div class="template left">
         <div class="card">
-          <img src="images/1template_428x588.png" class="card-img-top" alt="..." id="templateOne">
+          <a href="/fotosablon.html" target="blank"><img src="images/honlap1.jpg" class="card-img-top"
+              alt="honlapkészítés" id="templateOne"></a>
           <div class="card-body p-left">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+            <h5 class="card-title">Pure Business</h5>
+            <p class="card-text">Ezt a honlapsablont annak ajánljuk, akik nem csiricsáré honlapot szeretnének, hanem
+              letisztult, igényeset. Egyszerű, de nagyszerű.</p>
             <div class="buttoner"><button type="button" class="btn btn-primary">Primary</button></div>
           </div>
 
         </div>
       </div>
-    
+
 
       <div class="template right">
         <div class="card">
-          <img src="images/2template_428x428.png" class="card-img-top" alt="..." id="templateTwo">
+          <a href="/blueberry/index.html" target="blank"><img src="images/honlap2.jpg" class="card-img-top" alt="..."
+              id="templateTwo"></a>
           <div class="card-body p-left">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+            <h5 class="card-title">Fruits</h5>
+            <p class="card-text">Ezt pedig annak, aki nem akar sokat írni, de vannak saját képei.</p>
             <div class="buttoner"><button type="button" class="btn btn-primary">Primary</button></div>
           </div>
         </div>
@@ -204,7 +225,7 @@
 
       <div class="template left ptop">
         <div class="card">
-          <img src="images/2template_428x428.png" class="card-img-top" alt="...">
+          <a href="sablon2/index.html" target="blank"><img src="images/fogaszat.jpg" class="card-img-top" alt="..."></a>
           <div class="card-body p-left">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -216,7 +237,7 @@
 
       <div class="template right">
         <div class="card">
-          <img src="images/1template_428x588.png" class="card-img-top" alt="...">
+          <a href="/sablon/index.html" target="blank"><img src="/images/honlap3.jpg" class="card-img-top" alt="..."></a>
           <div class="card-body p-left">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -227,7 +248,7 @@
       </div>
       <div class="template left right">
         <div class="card">
-          <img src="images/1template_428x588.png" class="card-img-top" alt="...">
+          <a href="smooth/index.html" target="blank"><img src="smooth/smooth.jpg" class="card-img-top" alt="..."></a>
           <div class="card-body p-left">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -250,75 +271,154 @@
         </div>
       </div>
     </div>
+
+    <div class="container-fluid">
+      <div class="card package">
+        <div class="card-body">
+          <h3 class="card-title" id="price">Mennyibe kerül a fix áras honlap és mi van benne az árban?</h3>
+          <hr>
+          <p class="card-text">A fix áras csomag tartalma a következő:</p>
+          <div class="card-text">
+            <ul>
+              <li>az általad választott sablon alapján elkészített honlap átadása egy héten belül</li>
+              <li>a sablon használatának díja további felmerülő költségek nélkül</li>
+              <li>a sablon testreszabása igényeidnek megfelelően(képek, szövegek, színek, szakaszok sorrendje)</li>
+              <li>a testreszabáshoz 3 előzetes tervet késítünk neked az elképzeléseidnek megfelelően, ami alapján tudsz
+                választani</li>
+              <li>egyoldalas, teljesértékű honlap menüpontokkal</li>
+              <li>mobilbarát honlap</li>
+              <li>tartalom feltöltése az átadásnál</li>
+              <li>1 db fényképgaléria max. 50 kép általunk feltöltésével</li>
+              <li>SSL biztonsági tanúsítvány</li>
+              <li>Összeköttetés Facebookkal és más közösségi oldalakkal</li>
+              <li>SEO (kereső optimalizálás) alapbeállítás</li>
+              <li>Google Webmester eszközök integrációja</li>
+            </ul>
+            <p class="card-text">Ára: 120.000 Ft</p>
+            <p class="card-text">Ha további kérdésed lenne, vagy szeretnéd megrendelni a szolgáltatást, hogy egy hét
+              múlva már saját honlapod legyen, keress minket bizalommal!</p>
+          </div>
+          <a href="#" class="btn btn-primary" id="fixbtn">Kapcsolat</a>
+        </div>
+      </div>
+
+
+    </div>
+
+
     <div class="img-container sm-height mgt">
-      <h3 class="rice">"Valami nagyon elmés szöveg, amitől azonnal megrendelsz minden szolgáltatást"</h3>
+      <h3 class="rice">"A honlap egy olyan alkalmazott, aki napi 24 órában dolgozik neked fáradhatalanul."</h3>
     </div>
     <div class="container-more">
       <div class="image-section mgt10">
-        <img id="flowchart" src="https://modassicmarketing.com/wp-content/uploads/2010/01/webdesign-workflow.jpg"
-          alt="">
+        <img id="flowchart" src="/images/flowchart.jpg" alt="">
       </div>
       <div class="text-section longer item" id="yourown">
-        <h2 class="mgl">Weboldalkészítés</h2>
+        <h2 class="mgl" id="egyedi">Weboldalkészítés</h2>
         <h2 class="mgl">egyedi igények alapján</h2>
-        <p class="mgl mgt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, dolorem quis? Repellendus
-          facilis consectetur quibusdam saepe amet eveniet doloremque ratione maiores mollitia quisquam itaque vero
-          consequuntur, incidunt, tempora quos aperiam doloribus atque reiciendis possimus! Possimus id, tenetur
-          obcaecati facere molestias unde temporibus dolor asperiores laudantium harum iure quasi sequi quo?</p>
-        <p class="mgl mgt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate est perspiciatis
-          eligendi voluptates, ratione molestiae inventore fuga animi! Molestiae, autem!</p>
-        <div class="buttoner">
+        <p class="mgl mgt">Ha összetettebb szerkezetű honlapot szeretnél, vagy termékeid webshopban szeretnéd
+          értékesíteni és ehhez szükséged van egy online felületre, vagy a honlapodat szeretnéd összekapcsolni egy back
+          office rendszerrel, nyilvántartással, keress minket bizalommal.</p>
+        <p class="mgl mgt">Ebben az esetben a céljaid meghatározása után közösen tervezzük meg a honlapod ideális
+          szerkezetét a kereső optimalizálást is szem előtt tartva. Ezt követően tudunk pontos árajánlatot adni, hiszen
+          nem mindegy, hogy egy egyéni vállalkozónak készítünk webshopot, akinek maximum 10 féle terméke van, vagy egy
+          nagyobb cégnek sok száz termékkel, vagy éppen egy étteremnek időpontfoglaló rendszert alakítunk ki.</p>
+        <p class="mgl mgt">Ha elfogadod az árajánlatot, megkötjük a szerződést és egy kreatív egyeztetés során, mely
+          lehet személyes vagy online, egyeztetünk a honlap kinézetével kapcsolatos elképzeléseidről. Három design
+          tervet készítünk ezek alapján, melyből kiválaszthatod a végleges verziót.</p>
+
+        <div class="buttoner intext">
           <button type="button" class="btn btn-primary btn-lg">Ajánlatkérés</button>
         </div>
 
-        <img id="webdesign" src="https://www.uxweb-design.com/wp-content/uploads/2019/10/Web-design-1.jpg" alt="">
+
 
       </div>
+      <div class="more">
+        <p></p>
+        <p>Amíg mi a fejlesztéssel foglalkozunk, neked a szöveges és képi tartalom elkészítése a feladatod, amelyben
+          szívesen segítünk, ha igényt tartasz rá. Foglalkozunk üzleti fotózásokkal is, így akár termékfotókra, akár
+          üzleti portréra van szükséged a csapattagokról, keress minket bizalommal. Természetesem ezt a szolgáltatást
+          nem kötelező igénybe venni, általad hozott képekkel is elkészítjük honlapodat. További információt a
+          fotózásról <a href="#photography">itt</a> találsz.</p>
+        <p>Miután elkészítettük a honlapodat, feltöltjük a szöveges tartalmat és képeket. Ha kértél a honlapodhoz
+          adminisztrációs felületet, akkor az átadást követően megmutatjuk annak működését. Ha nincs admin felület az
+          oldaladra, választhatsz különböző egyszeri, vagy éves díjú szolgáltatásaink közül is, melyek arra nyújtanak
+          megoldást, hogy a honlapod tartalmának frissítése megoldott legyen.</p>
+        <p>Ha bizonytalan vagy abban, hogy elég-e számodra a fix áras honlapcsomagunk, vagy egyedi fejlesztésű honlapra
+          van szükséged, szívesen segítünk a döntésben, ha felveszed velünk a kapcsolatot. Emellett, a következő
+          összefoglaló táblázatot készítettük segítségül, hogy össze tudd hasonlítani a lehetőségeket:</p>
 
+      </div>
+      <!--- <img id="webdesign" src="images/webfejlesztés.png" alt="honlapkészítés"> -->
 
       <div class="text-section item" id="storage">
-        <h2 class="mgl">Tárhely szolgáltatás</h2>
-        <p class="mgl mgt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, dolorem quis? Repellendus
-          facilis consectetur quibusdam saepe amet eveniet doloremque ratione maiores mollitia quisquam itaque vero
-          consequuntur, incidunt, tempora quos aperiam doloribus atque reiciendis possimus! Possimus id, tenetur
-          obcaecati facere molestias unde temporibus dolor asperiores laudantium harum iure quasi sequi quo?</p>
-        <p class="mgl mgt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate est perspiciatis
-          eligendi voluptates, ratione molestiae inventore fuga animi! Molestiae, autem!</p>
-        <img id="tablet" src="https://www.uxweb-design.com/wp-content/uploads/2019/10/101-multimedia.jpg" alt="">
+        <h2 class="mgl" id="tarhely">Tárhely szolgáltatás</h2>
+        <p class="mgl mgt">Annak érdekében, hogy gördülékenyen elkészüljön a honlapod, nemcsak a fejlesztéssel, hanem az
+          üzemeltetésével kapcsolatban is tudunk segítséget nyújtani. Minden honlaphoz szükség van egy tárhelyre, amin
+          az oldal forráskódja, a rajta szereplő képek, egyéb alkotóelemek találhatóak. Egyes domain szolgáltatók
+          csomagjaikhoz ingyen biztosítanak egy kisebb méretű tárhelyet, de ha nagyobbra van szükséged, vagy szeretnéd,
+          ha egy szolgáltató kezében legyen az üzemeltetés és a honlap fejlesztése, akkor érdemes minket választanod. A
+          szükséges tárhely méretét -és így az árát- egyedileg határozzuk meg az elképzelések felmérése után.</p>
+
+        <!--  <img id="tablet" src="https://www.uxweb-design.com/wp-content/uploads/2019/10/101-multimedia.jpg" alt="">-->
+      </div>
+      <div class="image-section mgt10" id="shorter">
+        <img id="flowchart" src="images/szolgáltatásaink.png" alt="honlapkészítés">
       </div>
       <div class="image-section mgt10">
-        <img id="flowchart" src="https://m.media-amazon.com/images/I/41u-xsGA9BL.jpg" alt="">
-      </div>
-      <div class="image-section mgt10">
-        <img id="flowchart" src="https://modassicmarketing.com/wp-content/uploads/2010/01/webdesign-workflow.jpg"
-          alt="">
+        <img id="flowchart" src="images/nagy-judit-etelfotos.jpg"
+          alt="Nagy Judit ételfotózás">
       </div>
       <div class="text-section longer item">
         <h2 class="mgl" id="photography">Fotózás</h2>
-        <p class="mgl mgt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, dolorem quis? Repellendus
-          facilis consectetur quibusdam saepe amet eveniet doloremque ratione maiores mollitia quisquam itaque vero
-          consequuntur, incidunt, tempora quos aperiam doloribus atque reiciendis possimus! Possimus id, tenetur
-          obcaecati facere molestias unde temporibus dolor asperiores laudantium harum iure quasi sequi quo?</p>
-        <p class="mgl mgt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate est perspiciatis
-          eligendi voluptates, ratione molestiae inventore fuga animi! Molestiae, autem!</p>
-        <div class="buttoner">
-          <button type="button" class="btn btn-primary btn-lg">Ajánlatkérés</button>
-        </div>
-        <img id="webdesign" src="https://www.uxweb-design.com/wp-content/uploads/2019/10/Web-design-1.jpg" alt="">
+        <p class="mgl mgt">A honlapodhoz egészen biztosan szükséged lesz fotókra. Ha ezekkel már rendelkezel, akkor
+          természetesen csak el kell küldened nekünk és a megebszéltek szerint feltöltjük a honlapodra. Ha azonban még
+          nem fektettél be egy üzleti fotózásba, vagy nem vagy elégedett az eddigi képeid minőségével, mindenképpen
+          érdemes az új honlapodra a megfelelő fényképeket elkészíttetni.</p>
+        <h3 class="lefth">Üzleti portré fotózás</h3>
+        <p class="mgl mgt">Ha szeretnéd, hogy hogy ügyfeleid, vásárlóid már az első pillanatban bizalmat szavazzanak
+          neked, szükséged lesz néhány professzionális fotóra az oldaladon rólad, illetve kollégáidról. Fontos, hogy
+          ezek a fotók igényesek, hozzáértő által elkészítettek legyen, hiszen az általad nyújtott színvonalra lehet
+          következtetni abból, hogy milyen a bemutatkozó anyagod.</p>
+        <h3 class="lefth">Termékfotózás webshophoz</h3>
+        <p class="mgl mgt">Vállaljuk egyszerű, fehér hátteres, homogén termékfotók elkészítését webshophoz, de
+          természetesen kreatívabb reklámfotók elkészítésében is tudunk segíteni. Ruhák fotózásánál van lehetőség
+          önmagában a termékek fotózására, vagy modelles fotózásokra is.</p>
+
+        <!--<img id="webdesign" src="https://www.uxweb-design.com/wp-content/uploads/2019/10/Web-design-1.jpg" alt=""> -->
 
       </div>
+      <div class="more">
+        <h3 class="prodh3">Ételfotózás</h3>
+        <p>Az ételfotózás tulajdonképpen a termékfotózás egy speciális fajtája, ami speciális tudást,
+          tapasztalatot is igényel. Egyik fő profilunk az ételfotózás, így, ha szükséged van ételfotókra étlaphoz, vagy
+          az online menüválasztékhoz, esetleg reklámokhoz, kreatív anyagokhoz, keress minket bizalommal.</p>
+        <h3 class="prodh3">Termékfotózás, ételfotózás árak</h3>
+        <p>Sokmindentől függ az ár, hiszen nem mindegy, hogy fehér háttérrel fotózunk-e, vagy
+          valamilyen kreatívabb beállítással, csak a termékeket fotózzuk-e, vagy modellek segítségével dolgozunk,
+          illetve természetesen az is fontos kérdés, hogy mekkora mennyiségről van szó, ezért mindenképpen érdemes
+          árajánlatot kérni emailben, de általánosságban elmondható, hogy a termékfotózás már elérhető 1500 Ft/db áron.
+        </p>
+
+        <div class="buttoner photo">
+          <button type="button" class="btn btn-primary btn-lg">Ajánlatkérés</button>
+        </div>
+      </div>
+
+
+
       <div class="text-section item">
         <h2 class="mgl" id="graphicdesign">Grafikai szolgáltatások</h2>
-        <p class="mgl mgt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, dolorem quis? Repellendus
-          facilis consectetur quibusdam saepe amet eveniet doloremque ratione maiores mollitia quisquam itaque vero
-          consequuntur, incidunt, tempora quos aperiam doloribus atque reiciendis possimus! Possimus id, tenetur
-          obcaecati facere molestias unde temporibus dolor asperiores laudantium harum iure quasi sequi quo?</p>
-        <p class="mgl mgt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate est perspiciatis
-          eligendi voluptates, ratione molestiae inventore fuga animi! Molestiae, autem!</p>
-        <img id="tablet" src="https://www.uxweb-design.com/wp-content/uploads/2019/10/101-multimedia.jpg" alt="">
+        <p class="mgl mgt"> Alapszolgáltatásként minden megrendelt honlaphoz három látványtervet készítünk az előzetes
+          egyeztetéseket követően, ahol elmondhatod az elképzeléseidet. Emellett, ha szükséged van logó- vagy
+          arculattervezésre, névjegykártya tervekre vagy bármilyen kreatív anyagra, fordulj hozzánk bizalommal.</p>
+        <p class="mgl mgt">Emmellett, foglalkozunk a közösségi médiára szánt reklámok, posztok képi anyagának
+          megtervezésével is, akár fotók, akár egyéb grafikai elemek segítségével való szerkesztéséről legyen szó.</p>
+        <!-- <img id="tablet" src="https://www.uxweb-design.com/wp-content/uploads/2019/10/101-multimedia.jpg" alt="">-->
       </div>
       <div class="image-section mgt10">
-        <img id="flowchart" src="https://m.media-amazon.com/images/I/41u-xsGA9BL.jpg" alt="">
+        <img id="flowchart" src="images/grafika.png" alt="Grafikai szolgáltatások">
       </div>
     </div>
 
@@ -392,6 +492,26 @@
     </div>
   </div>
 
+  <div class="contact">
+    <div class="container contacter">
+      <div class="row">
+        <div class="col-4">
+         <h2>Kérdésed van?</h2> 
+          <h2>Megrendelnéd szolgáltatásainkat?</h2>
+        </div>
+        <div class="col-4">
+          <h3 class="services">Írj nekünk emailt:</h3>
+          <a href="mailto:info@weboldalstudio.com">info@weboldalstudio.com</a>
+        </div>
+        <div class="col-4">
+          <h3 class="services">Vagy keress Facebookon:</h3>
+          <a href="https://www.facebook.com/webinteractivestudio" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
 
 
 
@@ -403,7 +523,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
   </script>
-   <script src="js.js"></script>
+  <script src="js.js"></script>
+  <script src="https://kit.fontawesome.com/27b7734d11.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
