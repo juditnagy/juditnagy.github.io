@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Standard Meta -->
   <meta charset="utf-8" />
@@ -8,72 +9,82 @@
 
   <!-- Site Properties -->
   <title>Hotel Rivo</title>
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/site.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/site.css">
 
-  <link rel="stylesheet" type="text/css" href="container.css">
-  <link rel="stylesheet" type="text/css" href="grid.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/header.css">
-  <link rel="stylesheet" type="text/css" href="image.css">
-  <link rel="stylesheet" type="text/css" href="menu.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/container.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/header.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/image.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/menu.css">
 
-  <link rel="stylesheet" type="text/css" href="divider.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/dropdown.css">
-  <link rel="stylesheet" type="text/css" href="segment.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/button.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/list.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/icon.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/sidebar.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/transition.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/progress.css">
-  <link rel="stylesheet" type="text/css" href="../dist/components/label.css">
-    <link rel="stylesheet" type="text/css" href="../dist/components/reveal.css">
-	    <link rel="stylesheet" type="text/css" href="../dist/components/dimmer.css">
-		    <link rel="stylesheet" type="text/css" href="../dist/components/modal.css">
-			  <link rel="stylesheet" type="text/css" href="../dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/list.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/transition.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/progress.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/label.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/reveal.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/dimmer.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/modal.css">
+  <link rel="stylesheet" type="text/css" href="./dist/components/dropdown.css">
 
 
-   <link rel="stylesheet" href="gallery/dist/simple-lightbox.css?v2.4.1" />
-   
+  <link rel="stylesheet" href="gallery/dist/simple-lightbox.css?v2.4.1" />
+
   <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
 
- * {
-            box-sizing: border-box;
-        }
+    .inside {
+      font-size: 1.2em;
+      padding: 2%;
+    }
 
-        .container .gallery a img {
-            float: left;
-            width: 	100%;
-			padding: 10px;
-            height: auto;
-            border: 2px solid #fff;
-            -webkit-transition: -webkit-transform .15s ease;
-            -moz-transition: -moz-transform .15s ease;
-            -o-transition: -o-transform .15s ease;
-            -ms-transition: -ms-transform .15s ease;
-            transition: transform .15s ease;
-            position: relative;
-        }
+    .cont{
+padding: 0;
+margin-top: 5px;
+margin-bottom: 0px;
+    }
 
-        .clear {
-            clear: both;
-        }
+    .container .gallery a img {
+      float: left;
+      width: 100%;
+      padding: 10px;
+      height: auto;
+      border: 2px solid #fff;
+      -webkit-transition: -webkit-transform .15s ease;
+      -moz-transition: -moz-transform .15s ease;
+      -o-transition: -o-transform .15s ease;
+      -ms-transition: -ms-transform .15s ease;
+      transition: transform .15s ease;
+      position: relative;
+    }
 
-        a {
-            color: #009688;
-            text-decoration: none;
-        }
+    .clear {
+      clear: both;
+    }
 
-        a:hover {
-            color: #01695f;
-            text-decoration: none;
-        }
-		
-		
-		span {
-  background-color: black;
-}
-		
+    a {
+      color: #009688;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #01695f;
+      text-decoration: none;
+    }
+
+
+    span {
+      background-color: black;
+    }
+
     .hidden.menu {
       display: none;
     }
@@ -82,18 +93,22 @@
       min-height: 600px;
       padding: 1em 0em;
     }
+
     .masthead .logo.item img {
       margin-right: 1em;
     }
+
     .masthead .ui.menu .ui.button {
       margin-left: 0.5em;
     }
+
     .masthead h1.ui.header {
       margin-top: 3em;
       margin-bottom: 0em;
       font-size: 4em;
       font-weight: normal;
     }
+
     .masthead h2 {
       font-size: 1.7em;
       font-weight: normal;
@@ -102,19 +117,24 @@
     .ui.vertical.stripe {
       padding: 8em 0em;
     }
+
     .ui.vertical.stripe h3 {
       font-size: 2em;
     }
-    .ui.vertical.stripe .button + h3,
-    .ui.vertical.stripe p + h3 {
+
+    .ui.vertical.stripe .button+h3,
+    .ui.vertical.stripe p+h3 {
       margin-top: 3em;
     }
+
     .ui.vertical.stripe .floated.image {
       clear: both;
     }
+
     .ui.vertical.stripe p {
       font-size: 1.33em;
     }
+
     .ui.vertical.stripe .horizontal.divider {
       margin: 3em 0em;
     }
@@ -122,6 +142,7 @@
     .quote.stripe.segment {
       padding: 0em;
     }
+
     .quote.stripe.segment .grid .column {
       padding-top: 5em;
       padding-bottom: 5em;
@@ -139,515 +160,601 @@
       .ui.fixed.menu {
         display: none !important;
       }
+
       .secondary.pointing.menu .item,
       .secondary.pointing.menu .menu {
         display: none;
       }
+
       .secondary.pointing.menu .toc.item {
         display: block;
       }
+
       .masthead.segment {
         min-height: 350px;
       }
+
       .masthead h1.ui.header {
         font-size: 2em;
         margin-top: 1.5em;
       }
+
       .masthead h2 {
         margin-top: 0.5em;
         font-size: 1.5em;
       }
     }
-
-
   </style>
 
   <script src="assets/library/jquery.min.js"></script>
   <script src="../dist/components/visibility.js"></script>
   <script src="../dist/components/sidebar.js"></script>
   <script src="../dist/components/transition.js"></script>
-    <script src="../dist/components/progress.min.js"></script>
-	    <script src="../dist/components/dimmer.js"></script>
-		 <script src="../dist/components/modal.js"></script>
-<script src="../dist/components/dropdown.js"></script>
+  <script src="../dist/components/progress.min.js"></script>
+  <script src="../dist/components/dimmer.js"></script>
+  <script src="../dist/components/modal.js"></script>
+  <script src="../dist/components/dropdown.js"></script>
 
 
   <script>
-  $(document)
-    .ready(function() {
+    $(document)
+      .ready(function () {
 
-$('.example')
-  .dimmer({
-    on: 'hover'
-  })
-;
+        $('.example')
+          .dimmer({
+            on: 'hover'
+          });
 
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
+        // fix menu when passed
+        $('.masthead')
+          .visibility({
+            once: false,
+            onBottomPassed: function () {
+              $('.fixed.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function () {
+              $('.fixed.menu').transition('fade out');
+            }
+          });
 
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-  
-  $('.ui.dropdown')
-  .dropdown()
-;
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item');
 
-    })
-  ;
-  function szoba1()
-  {
-  $('#szoba1')
-  .modal('show')
-;
-  }
-  
-  function szoba2()
-  {
-  $('#szoba2')
-  .modal('show')
-;
-  }
-  
-  function szoba3()
-  {
-  $('#szoba3')
-  .modal('show')
-;
-  }
-  
+        $('.ui.dropdown')
+          .dropdown();
 
+      });
+
+    function szoba1() {
+      $('#szoba1')
+        .modal('show');
+    }
+
+    function szoba2() {
+      $('#szoba2')
+        .modal('show');
+    }
+
+    function szoba3() {
+      $('#szoba3')
+        .modal('show');
+    }
   </script>
-  
-  
+
+
 </head>
+
 <body>
 
-<!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
-  <div class="ui container">
+  <!-- Following Menu -->
+  <div class="ui large top fixed hidden menu">
+    <div class="ui container">
+      <a class="active item" href="#kezdolap">Kezdőlap</a>
+      <a href="#rolunk" class="item">Rólunk</a>
+      <a href="#szobak" class="item">Szobáink</a>
+      <a href="#galeria" class="item">Galéria</a>
+      <div class="right menu">
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu">
     <a class="active item" href="#kezdolap">Kezdőlap</a>
     <a href="#rolunk" class="item">Rólunk</a>
     <a href="#szobak" class="item">Szobáink</a>
     <a href="#galeria" class="item">Galéria</a>
-    <div class="right menu">
-     
-      </div>
-    </div>
+
   </div>
-</div>
-
-<!-- Sidebar Menu -->
-<div class="ui vertical inverted sidebar menu">
-  <a class="active item" href="#kezdolap">Kezdőlap</a>
-  <a href="#rolunk" class="item">Rólunk</a>
-  <a href="#szobak" class="item">Szobáink</a>
-  <a href="#galeria" class="item">Galéria</a>
-  
-</div>
 
 
-<!-- Page Contents -->
-<div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment" style="background: url(assets/images/items/banner.jpg)">
+  <!-- Page Contents -->
+  <div class="pusher">
+    <div class="ui inverted vertical masthead center aligned segment"
+      style="background: url(assets/images/hotel2.jpg)">
 
 
-    <div class="ui container">
-      <div class="ui large secondary inverted menu">
-        <a class="toc item">
-          <i class="sidebar icon"></i>
-        </a>
-        <a class="active item" href="#kezdolap" >Kezdőlap</a>
-        <a href="#rolunk" class="item">Rólunk</a>
-        <a href="#szobak" class="item">Szobáink</a>
-        <a href="#galeria" class="item">Galéria</a>
-        <div class="right item">
-          
+      <div class="ui container">
+        <div class="ui large secondary inverted menu">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <a class="active item" href="#kezdolap">Kezdőlap</a>
+          <a href="#rolunk" class="item">Rólunk</a>
+          <a href="#szobak" class="item">Szobáink</a>
+          <a href="#galeria" class="item">Galéria</a>
+          <div class="right item">
+
+          </div>
         </div>
       </div>
+      <a name="kezdolap"></a>
+      <div class="ui four column grid container">
+
+        <div class="row">
+          <div class="ui container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="assets/images/items/logo3.png">
+            <h1 class="inverted header" style="font-size:75px; font-family:Courier">
+
+
+              Hotel Rivo
+            </h1>
+
+            <!-- <h2><span>Tökéletes Hely, Tökéletes Kényelem.</span></h2>-->
+
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+
+        <div class="four column row">
+
+          <div class="column">
+            <select class="ui dropdown">
+              <option value="">Érkezés</option>
+              <option value="5">Február 7</option>
+              <option value="4">Február 8</option>
+              <option value="3">Február 9</option>
+              <option value="2">Február 10</option>
+              <option value="1">Február 11</option>
+              <option value="0">Február 12</option>
+            </select>
+          </div>
+          <div class="column">
+            <select class="ui dropdown">
+              <option value="">Távozás</option>
+              <option value="5">Február 8</option>
+              <option value="4">Február 9</option>
+              <option value="3">Február 10</option>
+              <option value="2">Február 11</option>
+              <option value="1">Február 12</option>
+              <option value="0">Február 13</option>
+            </select>
+          </div>
+          <div class="column">
+            <select class="ui dropdown">
+              <option value="">Vendégek Száma</option>
+              <option value="3">Szoba 1 Főre</option>
+              <option value="2">Szoba 2 Főre</option>
+              <option value="1">Szoba 3 Főre</option>
+              <option value="0">Szoba 4 Főre</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="column">
+            <div class="ui inverted button">Szoba Foglalás<i class="right arrow icon"></i></div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
-<a name="kezdolap"></a>
-<div class="ui four column grid container">
-
-	<div class="row">
-	<div class="ui container">
-	    <br>
-	<br>
-	<br>
-		  <br>
-	<br>
-	<img src="assets/images/items/logo3.png">
-      <h1 class="inverted header" style="font-size:75px; font-family:Courier">
-	
-	  
-        Hotel Rivo
-      </h1>
-	 
-      <h2><span>Tökéletes Hely, Tökéletes Kényelem.</span></h2>
-	  
-	  <br>
-	<br>
-	<br>
-	  </div>
-	  </div>
-	  
-	  <div class="four column row">
-	 
-	  <div class="column">
-	  <select class="ui dropdown">
-  <option value="">Érkezés</option>
-  <option value="5">Február 7</option>
-  <option value="4">Február 8</option>
-   <option value="3">Február 9</option>
-  <option value="2">Február 10</option>
-   <option value="1">Február 11</option>
-  <option value="0">Február 12</option>
-</select>
-</div>
- <div class="column">
-<select class="ui dropdown">
-  <option value="">Távozás</option>
-  <option value="5">Február 8</option>
-  <option value="4">Február 9</option>
-  <option value="3">Február 10</option>
-  <option value="2">Február 11</option>
-  <option value="1">Február 12</option>
-  <option value="0">Február 13</option>
-</select>
-</div>
- <div class="column">
-	  <select class="ui dropdown">
-  <option value="">Vendégek Száma</option>
-  <option value="3">Szoba 1 Főre</option>
-  <option value="2">Szoba 2 Főre</option>
-   <option value="1">Szoba 3 Főre</option>
-  <option value="0">Szoba 4 Főre</option>
-</select>
-	
-	<br>
-		  <br>
-	<br>
-	<br>
-		  <br>
-	<br>
-	<br>
-		  <br>
-	<br>
-	<br>
-		  <br>
-	<br>
-	<br>
-		  <br>
-	<br>
-	<br>
-</div>
- <div class="column">
-      <div class="ui inverted button">Szoba Foglalás<i class="right arrow icon"></i></div>
-	  </div>
-	  </div>
-	   </div>
-  
-
-  </div>
-<a name="rolunk"></a>
-  <div class="ui  vertical stripe segment" style="background:#F2F2F2">
+    <a name="rolunk"></a>
+    <div class="ui  vertical stripe segment" style="background:#F2F2F2">
       <div class=" row">
-    <div class="ui middle aligned stackable grid container"> 
-        <div class="eight wide column">
-          <h3 class="ui header"> A Hotel Rivo Kényelemmel Vár Minden Vendéget</h3>
-		  <p>Szobáink magasan az europai szoba sztenderdek felett állnak, többszörösen elismert és </p>
-          <p>Éttermünkben magyar és nemzetközi fogásokkal várunk minden vendéget.</p>
-          <h3 class="ui header">Rólunk</h3>
-          <p>Hotelünk országszerte elismert, nem ok nélkül. A létesítmény összesen 44 vendégszobával rendelkezik, java részük erkéllyel és remek kilátással a városra. A Hotel területén található étterem és uszoda, hozzá tartozó szaunával és élményfürdő résszel. Vendégeink kizárólag a legjobb ellátásban részesülnek.</p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="assets/images/wireframe/07.jpg" class="ui large bordered rounded image">
+        <div class="ui middle aligned stackable grid container">
+          <div class="eight wide column">
+            <h3 class="ui header"> A Hotel Rivo már várja Önt</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, commodi. </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, accusamus..</p>
+            <h3 class="ui header">Rólunk</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos reiciendis doloremque odit sequi
+              molestiae, recusandae aliquam perferendis esse cum odio ipsam quam quasi. Non blanditiis odit, illo beatae
+              nesciunt similique!</p>
+          </div>
+          <div class="six wide right floated column">
+            <img src="assets/images/hotel11_thumb.jpg" class="ui large bordered rounded image">
+          </div>
         </div>
       </div>
-	  </div>
       <div class="row">
         <div class="center aligned column">
-          
+
         </div>
       </div>
-    
-  </div>
+
+    </div>
 
 
-  <div class="ui vertical stripe quote segment">
-    <div class="ui equal width stackable internally celled grid">
-      <div class="center aligned row">
-        <div class="column">
-          <h3>"Kiváló Szobák, Kiváló Kiszolgálás!"</h3>
-          <p>★★★★★ - noblehouse.net</p>
-        </div>
-        <div class="column">
-          <h3>"Soha nem töltöttünk még el szebb hétvégét"</h3>
-          <p>
-            <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Dr. Hendrei György</b>, vendégkönyv
-          </p>
+    <div class="ui vertical stripe quote segment">
+      <div class="ui equal width stackable internally celled grid">
+        <div class="center aligned row">
+          <div class="column">
+            <h3>"Kiváló Szobák, Kiváló Kiszolgálás!"</h3>
+            <p>★★★★★ - noblehouse.net</p>
+          </div>
+          <div class="column">
+            <h3>"Soha nem töltöttünk még el szebb hétvégét"</h3>
+            <p>
+              <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Dr. Hendrei György</b>, vendégkönyv
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  <div class="ui container">
 
-  <div class="ui vertical segment">
-
-
-<div class="ui small modal" id="szoba1">
-  <div class="header">Egyfős Szobák</div>
-  <div class="scrolling content">
-   <img src="assets/images/items/room3.jpg" class="ui huge  image">
-    <p style="font-size: 18px"> A Hotel minden szobálya maga a kényelem, ezen szobákat kifejezetten egyéjszakás tartózkodásokhoz javasoljuk.
-	A szobákban síkképernyős TV, valamint egy káddal vagy zuhanyzóval felszerelt, privát fürdőszoba is található. A saját fürdőszoba kádas vagy zuhanyzós. Minden szoba légkondicionált, néhányhoz pedig a városra néző erkély is tartozik.
-	Olyan helyen van, hogy az egyedül utazók kedvence lett! Egyfős utakhoz 9,4 pontra értékelték.</p>
-	 <img src="assets/images/items/corridor.jpg" class="ui huge  image">
-	  <p style="font-size: 18px">Minden szobában ingyenen WI-FI található, melyre a szoba külön jelszavával lehet csatlakozni.
-	  Dohányzás tilas, minden szoba területén, azonban engedélyezett bármelyik teraszon vagy erkélyen.</p>
-  </div>
-</div>
-
-<div class="ui large modal" id="szoba2">
-  <div class="header">Kétfős Szobák</div>
-  <div class="scrolling content">
-  <img src="assets/images/items/room1.jpg" class="ui huge  image">
-    <p style="font-size: 18px"> A Hotel minden szobálya maga a kényelem, ezen szobákat kifejezetten pároknak javasoljuk.
-	A szobákban síkképernyős TV, valamint egy káddal vagy zuhanyzóval felszerelt, privát fürdőszoba is található. A saját fürdőszoba kádas vagy zuhanyzós. Minden szoba légkondicionált, néhányhoz pedig a városra néző erkély is tartozik.
-	Olyan helyen van, hogy az egyedül utazók kedvence lett! Egyfős utakhoz 9,4 pontra értékelték.</p>
-	 <img src="assets/images/items/corridor.jpg" class="ui huge  image">
-	  <p style="font-size: 18px">Minden szobában ingyenen WI-FI található, melyre a szoba külön jelszavával lehet csatlakozni.
-	  Dohányzás tilas, minden szoba területén, azonban engedélyezett bármelyik teraszon vagy erkélyen.</p>
-  </div>
-</div>
-
-<div class="ui large modal" id="szoba3">
-  <div class="header">Családi Szobák</div>
-  <div class="scrolling content">
-  <img src="assets/images/items/room2.jpg" class="ui huge  image">
-    <p style="font-size: 18px"> A Hotel minden szobálya maga a kényelem, ezen szobákat kifejezetten családoknak, többfős társaságoknak javasoljuk.
-	A szobákban síkképernyős TV, valamint egy káddal vagy zuhanyzóval felszerelt, privát fürdőszoba is található. A saját fürdőszoba kádas vagy zuhanyzós. Minden szoba légkondicionált, néhányhoz pedig a városra néző erkély is tartozik.
-	Olyan helyen van, hogy az egyedül utazók kedvence lett! Egyfős utakhoz 9,4 pontra értékelték.</p>
-	 <img src="assets/images/items/corridor.jpg" class="ui huge  image">
-	  <p style="font-size: 18px">Minden szobában ingyenen WI-FI található, melyre a szoba külön jelszavával lehet csatlakozni.
-	  Dohányzás tilas, minden szoba területén, azonban engedélyezett bármelyik teraszon vagy erkélyen.</p>
-  </div>
-</div>
-
-<a name="szobak"></a>
-  <div class="ui three column grid stackable">
-  <div class="column center aligned">
-	<div class="ui container example">
-    <img src="assets/images/items/room3.jpg" class="ui  huge  image">
-		<div class="ui dimmer">
-			<div class="content">
-			  <button onclick="szoba1()" class="ui inverted button">További Részletek</button>  
-			</div>
-		</div>
-	</div>
-  <p>
-   <div class="ui animated fade button fluid" tabindex="0">
-	  <div class="visible content">Szoba Egy Főre</div>
-	  <div class="hidden content">Már 10 990 Ft/Éjszaka</div>
-	</div>
-  </p> 
-  </div>
-  
-  
-   <div class="column center aligned">
-	<div class="ui container example">
-    <img src="assets/images/items/room1.jpg" class="ui  huge  image">
-		<div class="ui dimmer">
-			<div class="content">
-			  <button onclick="szoba2()" class="ui inverted button">További Részletek</button>  
-			</div>
-		</div>
-	</div>
-  <p>
-   <div class="ui animated fade button fluid" tabindex="0">
-	  <div class="visible content">Szoba Két Főre</div>
-	  <div class="hidden content"> Már 12 990 Ft/Éjszaka</div>
-	</div>
-  </p> 
-  </div>
-  
-  
-   <div class="column center aligned">
-	<div class="ui container example">
-    <img src="assets/images/items/room2.jpg" class="ui  huge  image">
-		<div class="ui dimmer">
-			<div class="content">
-			  <button onclick="szoba3()" class="ui inverted button">További Részletek</button>  
-			</div>
-		</div>
-	</div>
-  <p>
-   <div class="ui animated fade button fluid" tabindex="0">
-	  <div class="visible content">Szoba Család Részére</div>
-	  <div class="hidden content">Már 17 990 Ft/Éjszaka</div>
-	</div>
-  </p> 
-  </div>
-
-  </div>
-</div>
-</div>
-  
-  <script>
-    $(document)
-    .ready(function() {
-
- $('#example1')
-  .progress()
-; 
-
-
-});
-
-var counter = 1;
-
- function lenyit()
- {
- counter++;
- 
-	if(counter%2==0)
-	{
-	$('#content').show('slow');
-	$('#gomb').html('Bezár');
-    $('#gomb').addClass('red');
-	} else {
-	$('#content').hide('slow');
-	$('#gomb').html('Kinyit');
-	$('#gomb').removeClass('red');
-	}
-	
-	
- }
- 
- var perc = 0;
- function nyom()
- {
- 
- perc += 20;
-$('#example1').progress({
-  percent: perc
-}); }
- 
- 
-
-</script>
-
-  
-  
-  <div class="ui vertical stripe segment">
-    <div class="ui text container">
-      <h3 class="ui header">Miért a Hotel Rivo?</h3>
-      <p>Hazánk egyik legszebb városában, az egyik legszebb hotelt kell választani!
-Rengeteg előnnyel rendelkezik szállodánk, illetve, áraink is versenyképesek. Hotelünk kényelmet biztosít minden egyes vendégnek, és sohasem okoz csalódást ebben. 
-</p>
-      <div id="content" style="display:none;">
-	 Fedett és szabadtéri parkoló, autómosó és parkolóinas-szolgáltatás egyaránt elérhető.
-
-Vendégeink elfogulatlan értékelései alapján ez Budapest egyik legkedveltebb része.
-	  </div>
-	  
-	  <button onclick="lenyit()" class="ui large button" id="gomb">Kinyit</button>
-	  
-	  
-
-	  
-	  
-      <h4 class="ui horizontal header divider">
-        <a href="#">Még mindíg kételkedsz?</a>
-      </h4>
-      <h3 class="ui header">Olvass bele a vendégkönyvbe!</h3>
-      <p>Szállodánk  megannyi értékelőiből egy sem hagyta még el rossz szájízzel a Hotel Rivo-t! </p>
-      <a class="ui large button">Érdekel</a>
-    </div>
-  </div>
-
-<a name="galeria"></a>
-  <div class="ui vertical stripe segment">
-    <div class="ui middle aligned stackable grid container">
-      <div class="row">
-	  
-	  <div class="gallery">
-	  <div class="ui stackable two column grid">
-        
-		 <div class="column">
-        <a href="gallery/demo/img/full/01.jpg" class="big"><img class="huge" src="gallery/demo/img/thumb/01.jpg" alt="" title="Beautiful Image" /></a>
-		</div>
-		 <div class="column">
-        <a href="gallery/demo/img/full/02.jpg"><img src="gallery/demo/img/thumb/02.jpg" alt="" title=""/></a>
-		</div>
-			 <div class="column">
-        <a href="gallery/demo/img/full/03.jpg"><img src="gallery/demo/img/thumb/03.jpg" alt="" title="Beautiful Image"/></a>
-		</div>
-		 <div class="column">
-        <a href="gallery/demo/img/full/04.jpg"><img src="gallery/demo/img/thumb/04.jpg" alt="" title=""/></a>
-		</div>
-			 <div class="column">
-        <a href="gallery/demo/img/full/05.jpg"><img src="gallery/demo/img/thumb/05.jpg" alt="" title=""/></a>
-		</div>
-		 <div class="column">
-        <a href="gallery/demo/img/full/06.jpg"><img src="gallery/demo/img/thumb/06.jpg" alt="" title=""/></a>
-		</div>
-        <div class="clear"></div>
-    </div>
-	    </div>
-  
-<script src="gallery/dist/simple-lightbox.js?v2.4.1"></script>
-<script>
-    (function() {
-        var $gallery = new SimpleLightbox('.gallery a', {});
-    })();
-</script>
-
-      </div>
-    </div>
-  </div>
-  
-  <div class="ui inverted vertical footer segment">
     <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
-        <div class="three wide column">
-          <h4 class="ui inverted header">Kapcsolataink</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Facebook Oldalunk</a>
-            <a href="#" class="item">Instagram Oldalunk</a>
-            <a href="#" class="item">Vendégkönyv</a>
-            <a href="#" class="item">Tel.: 06307878887</a>
+
+      <div class="ui vertical segment">
+
+
+        <div class="ui small modal" id="szoba1">
+          <div class="header">Standard Szobák</div>
+          <div class="scrolling content">
+            <img src="assets/images/hotel12_thumb.jpg" class="ui huge  image">
+            <p class="inside">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, blanditiis.
+
+            </p>
+            <h3>Szoba mérete</h3>
+            <p class="inside">30 nm</p>
+
+            <h3>Felszereltség</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem, ipsum dolor</li>
+              <li>Lorem ipsum dolor sit</li>
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+            </ul>
+            <h3>Árak:</h3>
+            <p class="inside">19.990 Ft/éj/fő
+            </p>
+            <p class="inside">Legalább 2 éjszakás tartózkodás esetén 16.990 Ft/éj/fő
+            </p>
+            <h3>Foglalási feltételek</h3>
+            <p class="inside">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, deleniti molestiae
+              reiciendis soluta eligendi aliquam corporis modi debitis fuga cumque! Cupiditate voluptatum reprehenderit
+              assumenda molestias quibusdam, omnis iste placeat perferendis!</p>
+            <img src="assets/images/items/corridor.jpg" class="ui huge  image">
+            <p class="inside">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ducimus sunt molestiae
+              voluptas dignissimos nemo! Vitae molestias id facilis est quod reprehenderit, consequuntur earum, numquam
+              ea, at iure exercitationem a?</p>
           </div>
         </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Szolgáltatásainkról</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Szobáinkról</a>
-            <a href="#" class="item">Gyakori kérdések</a>
-            <a href="#" class="item">Megközelítési lehetőségek</a>
-            <a href="#" class="item">Ajánlatunk</a>
+
+        <div class="ui large modal" id="szoba2">
+          <div class="header">Premium Szobák</div>
+          <div class="scrolling content">
+            <img src="assets/images/items/room1.jpg" class="ui huge  image">
+            <p class="inside">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, blanditiis.
+
+            </p>
+            <h3>Szoba mérete</h3>
+            <p class="inside">30 nm</p>
+
+            <h3>Felszereltség</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem, ipsum dolor</li>
+              <li>Lorem ipsum dolor sit</li>
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+            </ul>
+            <h3>Árak:</h3>
+            <p class="inside">19.990 Ft/éj/fő
+            </p>
+            <p class="inside">Legalább 2 éjszakás tartózkodás esetén 16.990 Ft/éj/fő
+            </p>
+            <h3>Foglalási feltételek</h3>
+            <p class="inside">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, deleniti molestiae
+              reiciendis soluta eligendi aliquam corporis modi debitis fuga cumque! Cupiditate voluptatum reprehenderit
+              assumenda molestias quibusdam, omnis iste placeat perferendis!</p>
           </div>
         </div>
-        <div class="seven wide column">
-          <h4 class="ui inverted header">Hotel Rivo</h4>
-          <p>Email Elérhetőség: info@hotelrivo.at</p>
+
+        <div class="ui large modal" id="szoba3">
+          <div class="header">Családi Apartmanok</div>
+          <div class="scrolling content">
+            <img src="assets/images/hotel5_thumb.jpg" class="ui huge  image">
+            <p class="inside"> 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, blanditiis.
+
+            </p>
+            <h3>Szoba mérete</h3>
+            <p class="inside">30 nm</p>
+            
+            <h3>Felszereltség</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Lorem, ipsum dolor</li>
+              <li>Lorem ipsum dolor sit</li>
+              <li>Lorem ipsum dolor sit amet consectetur</li>
+            </ul>
+            <h3>Árak:</h3>
+            <p class="inside">19.990 Ft/éj/fő
+              </p>
+              <p class="inside">Legalább 2 éjszakás tartózkodás esetén 16.990 Ft/éj/fő
+              </p>
+            <h3>Foglalási feltételek</h3>
+            <p class="inside">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, deleniti molestiae reiciendis soluta eligendi aliquam corporis modi debitis fuga cumque! Cupiditate voluptatum reprehenderit assumenda molestias quibusdam, omnis iste placeat perferendis!</p>
+          </div>
+        </div>
+
+        <a name="szobak"></a>
+        <div class="ui three column grid stackable">
+          <div class="column center aligned">
+            <div class="ui container example">
+              <img src="assets/images/hotel12_thumb.jpg" class="ui  huge  image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <button onclick="szoba1()" class="ui inverted button">További Részletek</button>
+                </div>
+              </div>
+            </div>
+            <p>
+              <div class="ui animated fade button fluid" onclick="szoba1()" tabindex="0">
+                <div class="visible content">Standard szoba</div>
+                <div class="hidden content">Már 16 990 Ft/éjszaka</div>
+              </div>
+            </p>
+          </div>
+
+
+          <div class="column center aligned">
+            <div class="ui container example">
+              <img src="assets/images/hotel11_thumb.jpg" class="ui  huge  image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <button onclick="szoba2()" class="ui inverted button">További Részletek</button>
+                </div>
+              </div>
+            </div>
+            <p>
+              <div class="ui animated fade button fluid" onclick="szoba2()" tabindex="0">
+                <div class="visible content">Premium szoba</div>
+                <div class="hidden content"> AKCIÓ! 19 990 Ft/éjszaka</div>
+              </div>
+            </p>
+          </div>
+
+
+          <div class="column center aligned">
+            <div class="ui container example">
+              <img src="assets/images/hotel10_thumb.jpg" class="ui  huge  image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <button onclick="szoba3()" class="ui inverted button">További Részletek</button>
+                </div>
+              </div>
+            </div>
+            <p>
+              <div class="ui animated fade button fluid" onclick="szoba3()" tabindex="0">
+                <div class="visible content">Családi apartamn</div>
+                <div class="hidden content">Már 17 990 Ft/éjszaka</div>
+              </div>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document)
+        .ready(function () {
+
+          $('#example1')
+            .progress();
+
+
+        });
+
+      var counter = 1;
+
+      function lenyit() {
+        counter++;
+
+        if (counter % 2 == 0) {
+          $('#content').show('slow');
+          $('#gomb').html('Bezár');
+          $('#gomb').addClass('red');
+        } else {
+          $('#content').hide('slow');
+          $('#gomb').html('Kinyit');
+          $('#gomb').removeClass('red');
+        }
+
+
+      }
+
+      var perc = 0;
+
+      function nyom() {
+
+        perc += 20;
+        $('#example1').progress({
+          percent: perc
+        });
+      }
+    </script>
+
+
+
+    <div class="ui vertical stripe segment">
+      <div class="ui text container">
+        <h3 class="ui header">Szezonális ajánlatunk</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad obcaecati voluptatibus similique ipsa, sit illum tempore officia fugit adipisci distinctio ducimus, error aperiam, veritatis possimus assumenda minima et totam?
+        </p>
+        <div id="content" style="display:none;">
+          <h3>Az ajánlat részletei</h3>
+         <p class="inside">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ratione unde quas dignissimos corrupti doloribus. Ut a eaque voluptatem pariatur:</p>
+        <ul>
+          <li>Lorem ipsum dolor sit</li>
+          <li>Lorem, ipsum dolor</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit</li>
+          <li>Lorem, ipsum dolor</li>
+          <li>Lorem ipsum dolor sit amet</li>
+        </ul>
+        </div>
+
+        <button onclick="lenyit()" class="ui large button" id="gomb">Kinyit</button>
+
+
+
+
+
+        <h4 class="ui horizontal header divider">
+          <a href="#">Kérdésed van?</a>
+        </h4>
+        <h3 class="ui header">Vedd fel velünk a kapcsolatot!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cum sint tempora nulla maxime ullam iure eius voluptatibus necessitatibus omnis!</p>
+        <a class="ui large button">Kapcsolat</a>
+      </div>
+    </div>
+
+    <!--Elhelyezkedés
+    -->
+    <div class="ui  vertical stripe segment" style="background:#F2F2F2">
+      <div class=" row">
+        <div class="ui middle aligned stackable grid container">
+          <div class="eight wide column">
+            <h3 class="ui header">Elhelyezkedés</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, commodi. </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, accusamus..</p>
+            <h3 class="ui header">Megközelítés</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos reiciendis doloremque odit sequi
+              molestiae, se cum odio ipsam quam quasi. Non blanditiis odit, illo beatae
+              nesciunt similique!</p>
+          </div>
+          <div class="six wide right floated column">
+            <img src="map.png" class="ui large bordered rounded image">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="center aligned column">
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!--Elhelyezkedés
+    -->
+
+    <a name="galeria"></a>
+    <div class="ui vertical stripe segment">
+      <div class="ui middle aligned stackable grid container">
+        <div class="row">
+
+          <div class="gallery">
+            <div class="ui stackable two column grid">
+
+              <div class="column">
+                <a href="assets/images/hotel6.jpg" class="big"><img class="huge" src="assets/images/hotel6_thumb.jpg"
+                    alt="" title="Beautiful Image" /></a>
+              </div>
+              <div class="column">
+                <a href="assets/images/hotel7.jpg"><img src="assets/images/hotel7_thumb.jpg" alt="" title="" /></a>
+              </div>
+              <div class="column">
+                <a href="assets/images/hotel5.jpg"><img src="assets/images/hotel5_thumb.jpg" alt=""
+                    title="Beautiful Image" /></a>
+              </div>
+              <div class="column">
+                <a href="assets/images/hotel8.jpg"><img src="assets/images/hotel8_thumb.jpg" alt="" title="" /></a>
+              </div>
+              <div class="column">
+                <a href="assets/images/hotel3.jpg"><img src="assets/images/hotel3_thumb.jpg" alt="" title="" /></a>
+              </div>
+              <div class="column">
+                <a href="assets/images/hotel4.jpg"><img src="assets/images/hotel4_thumb.jpg" alt="" title="" /></a>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+
+          <script src="gallery/dist/simple-lightbox.js?v2.4.1"></script>
+          <script>
+            (function () {
+              var $gallery = new SimpleLightbox('.gallery a', {});
+            })();
+          </script>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+      <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+          <div class="three wide column">
+            <h4 class="ui inverted header">Közösségi média</h4>
+            <div class="ui inverted link list">
+              <a href="#" class="item">Facebook</a>
+              <a href="#" class="item">Instagram</a>
+             
+            </div>
+          </div>
+          <div class="three wide column">
+            <h4 class="ui inverted header">Szolgáltatásainkról</h4>
+            <div class="ui inverted link list">
+              <a href="#" class="item">Szobatípusok</a>
+              <a href="#" class="item">Megközelítési lehetőségek</a>
+              <a href="#" class="item">Kedvezményes ajánlatok</a>
+            </div>
+          </div>
+          <div class="seven wide column">
+            <h4 class="ui inverted header">Elérhetőségek</h4>
+            <p class="cont">Email</p>
+            <a class="" href="mailto:info@hotelem.hu"> info@hotelem.hu</a>
+            <p class="cont">Telefonszám</p>
+            <a class="" href="#" class="item">Tel.: 06307878887</a>
+            <p class="cont">Címünk</p>
+            <a class="" href="#" class="item">2345 Budapest, Mátyás út 2.</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
